@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArkTS 代码知识图谱</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ArkTS 代码知识图谱</h1>
+            <p class="subtitle">动态更新 · 实时查询</p>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="panel">
+                    <h2>文件列表</h2>
+                    <div id="file-list" class="file-list">
+                        <p class="loading">加载中...</p>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="content-area">
+                <div class="panel details-panel">
+                    <h2 id="selected-file-title">选择文件查看详情</h2>
+                    <div id="file-details" class="file-details">
+                        <p class="placeholder">点击左侧文件查看代码结构</p>
+                    </div>
+                </div>
+
+                <div class="panel query-panel">
+                    <h2>AI 查询</h2>
+                    <div class="query-input">
+                        <textarea id="query-input" placeholder="输入你的问题，例如：这个项目中有哪些函数？"></textarea>
+                        <button id="query-btn" class="btn">查询</button>
+                    </div>
+                    <div id="query-result" class="query-result">
+                        <p class="placeholder">查询结果将显示在这里</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
